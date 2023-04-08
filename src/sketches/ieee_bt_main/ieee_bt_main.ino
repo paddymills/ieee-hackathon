@@ -75,7 +75,7 @@ void setup() {
   Serial.println("\r\nSetting new name. Old name is");
   bt_serial.write("AT+NAME?\r\n");  // get current name
   bt_to_usb();
-  bt_serial.write("AT+NAME=HC-10\r\n");  // Set new name
+  bt_serial.write("AT+NAME=PatrickBT\r\n");  // Set new name
   bt_to_usb();
   Serial.println("New name is:");
   bt_serial.write("AT+NAME?\r\n");  // get current name
